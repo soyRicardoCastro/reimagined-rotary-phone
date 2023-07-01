@@ -6,13 +6,16 @@ import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
+import { ContactUs } from "@/components/contact-us"
 import { FaqAccordion } from "@/components/faq"
+import { Features } from "@/components/features"
 import { Icons } from "@/components/icons"
 import {
   PageHeader,
   PageHeaderDescription,
   PageHeaderHeading,
 } from "@/components/page-header"
+import { Testimonials } from "@/components/testimonials"
 
 export default function IndexPage() {
   return (
@@ -121,126 +124,10 @@ export default function IndexPage() {
           </div>
         </div>
       </section>
-      {/* <section className="space-y-8 overflow-hidden rounded-lg">
-        <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
-          <div className="grid gap-4">
-            <div>
-              <Image
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-                alt=""
-                width={300}
-                height={300}
-              />
-            </div>
-            <div>
-              <Image
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-                alt=""
-                width={300}
-                height={300}
-              />
-            </div>
-            <div>
-              <Image
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-                alt=""
-                width={300}
-                height={300}
-              />
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div>
-              <Image
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-                alt=""
-                width={300}
-                height={300}
-              />
-            </div>
-            <div>
-              <Image
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-                alt=""
-                width={300}
-                height={300}
-              />
-            </div>
-            <div>
-              <Image
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-                alt=""
-                width={300}
-                height={300}
-              />
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div>
-              <Image
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
-                alt=""
-                width={300}
-                height={300}
-              />
-            </div>
-            <div>
-              <Image
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-                alt=""
-                width={300}
-                height={300}
-              />
-            </div>
-            <div>
-              <Image
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
-                alt=""
-                width={300}
-                height={300}
-              />
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div>
-              <Image
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
-                alt=""
-                width={300}
-                height={300}
-              />
-            </div>
-            <div>
-              <Image
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
-                alt=""
-                width={300}
-                height={300}
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
-                alt=""
-                width={300}
-                height={300}
-              />
-            </div>
-          </div>
-        </div>
-      </section> */}
+
+      <Features />
+      <Testimonials />
+
       <section className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div className="flex flex-col gap-6">
           <Icons.help className="flex h-12 w-12 items-center justify-center rounded-full bg-primary p-2.5 text-white" />
@@ -254,7 +141,8 @@ export default function IndexPage() {
 
         <FaqAccordion />
       </section>
-      <section className="flex items-center justify-center"></section>
+
+      <ContactUs />
     </div>
   )
 }

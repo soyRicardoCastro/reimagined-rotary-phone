@@ -1,13 +1,17 @@
 import {
   Backpack,
+  Eye,
+  EyeOff,
   HelpCircle,
   Instagram,
   Laptop,
+  Loader2,
   LogOut,
   Megaphone,
   Moon,
   Settings,
   SunMedium,
+  Terminal,
   User,
   X,
   type Icon as LucideIcon,
@@ -28,6 +32,60 @@ export const Icons = {
   settings: Settings,
   megaphone: Megaphone,
   help: HelpCircle,
+  spinner: Loader2,
+  terminal: Terminal,
+  google: (props: LucideProps) => (
+    <svg
+      viewBox="-3 0 262 262"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMid"
+      {...props}
+    >
+      <path
+        d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"
+        fill="#4285F4"
+      />
+      <path
+        d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"
+        fill="#34A853"
+      />
+      <path
+        d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"
+        fill="#FBBC05"
+      />
+      <path
+        d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"
+        fill="#EB4335"
+      />
+    </svg>
+  ),
+  microsoft: (props: LucideProps) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" {...props}>
+      <path fill="#f3f3f3" d="M0 0h23v23H0z" />
+      <path fill="#f35325" d="M1 1h10v10H1z" />
+      <path fill="#81bc06" d="M12 1h10v10H12z" />
+      <path fill="#05a6f0" d="M1 12h10v10H1z" />
+      <path fill="#ffba08" d="M12 12h10v10H12z" />
+    </svg>
+  ),
+  facebook: (props: LucideProps) => (
+    <svg
+      viewBox="0 0 266.895 266.895"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M252.164 266.895c8.134 0 14.729-6.596 14.729-14.73V14.73c0-8.137-6.596-14.73-14.729-14.73H14.73C6.593 0 0 6.594 0 14.73v237.434c0 8.135 6.593 14.73 14.73 14.73h237.434z"
+        fill="#485a96"
+      />
+      <path
+        d="M184.152 266.895V163.539h34.692l5.194-40.28h-39.887V97.542c0-11.662 3.238-19.609 19.962-19.609l21.329-.01V41.897c-3.689-.49-16.351-1.587-31.08-1.587-30.753 0-51.807 18.771-51.807 53.244v29.705h-34.781v40.28h34.781v103.355h41.597z"
+        fill="#ffffff"
+      />
+    </svg>
+  ),
+  view: Eye,
+  hide: EyeOff,
   nextjs: (props: LucideProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
       <path
@@ -44,7 +102,7 @@ export const Icons = {
       viewBox="0 0 300 300"
       {...props}
     >
-      <g stroke-width="2.00" fill="none" stroke-linecap="butt">
+      <g strokeWidth="2.00" fill="none" strokeLinecap="butt">
         <path
           stroke="#cf9ba3"
           vector-effect="non-scaling-stroke"
@@ -1610,7 +1668,7 @@ export const Icons = {
       viewBox="0 0 1172 1169"
       {...props}
     >
-      <g stroke-width="2.00" fill="none" stroke-linecap="butt">
+      <g strokeWidth="2.00" fill="none" strokeLinecap="butt">
         <path
           stroke="#e4d0cf"
           vector-effect="non-scaling-stroke"

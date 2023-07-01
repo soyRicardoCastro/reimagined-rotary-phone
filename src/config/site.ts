@@ -1,41 +1,14 @@
-import type { MainNavItem } from "@/types"
-
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Dulcesdlissa",
+  name: "Dulcesdlissa: Aprende Reposteria Online",
   description:
-    "An open source e-commerce skateshop build with everything new in Next.js 13.",
+    "An open source e-commerce skateshop build wDulcesdlissa es una plataforma online de cursos de repostería ubicada en Tocuyito, Venezuela. Aprende a preparar una amplia variedad de postres, desde deliciosas tortas hasta pasteles, con nuestros cursos 100% prácticos. Nuestros expertos instructores te guiarán en todo momento para que puedas crear tus delicias dulces desde casa. Conviértete en un chef repostero y satisface los gustos dulces del día a día. ¡Regístrate ahora en Dulcesdlissa y comienza a crear tus postres más deliciosos!",
   url: "https://dulcesdlissa.com/",
   ogImage: "https://dulcesdlissa.com/opengraph-image.png",
-  mainNav: [
-    {
-      title: "Lobby",
-      items: [
-        {
-          title: "Products",
-          href: "/products",
-          description: "All the products we have to offer.",
-          items: [],
-        },
-        {
-          title: "Build a Board",
-          href: "/build-a-board",
-          description: "Build your own custom skateboard.",
-          items: [],
-        },
-        {
-          title: "Blog",
-          href: "/blog",
-          description: "Read our latest blog posts.",
-          items: [],
-        },
-      ],
-    },
-  ] satisfies MainNavItem[],
   links: {
-    twitter: "https://twitter.com/sadmann17",
-    github: "https://github.com/sadmann7/skateshop",
+    twitter: "https://twitter.com/imRicardoJs",
+    github: "https://github.com/soyRicardoCastro",
     instagram: "https://instagram.com/dulcesdlissa",
   },
 }
